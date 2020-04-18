@@ -1,21 +1,13 @@
 package com.anurag;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.client.RestTemplate;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+@SpringBootTest
+class AddEmpApplicationTests {
 
-@SpringBootApplication
-@EnableEurekaClient
-public class AddEmpApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(AddEmpApplication.class, args);
+	@Test
+	void contextLoads() {
 	}
-	@Bean
-	public RestTemplate getRestTemplate() {
-		return new RestTemplate();	
-	}
+
 }
